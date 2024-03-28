@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- ---------------slick.min.css------------  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ------------------theme.min.css-------------  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="bgc_sky">
+
+  <header class=" ">
+    <div class="container">
+      <nav class=" py-4 ">
+        <div class="d-flex align-items-center justify-content-between justify-content-md-around ">
+          <p class="clr_blue fs_lg ff_inter mb-0">Bluish</p>
+          <ul class="d-flex align-items-center flex-md-row flex-column nav_items ps-0 m-0">
+            <li><a class="fs_md fw_small clr_blue ms-md-5 ms-0" href="">Home</a></li>
+            <li class="ms-md-5 ms-0  mt-5 mt-md-0"><a class="fs_md fw_regular" href="">Services</a></li>
+            <li class="ms-md-5 ms-0  mt-5 mt-md-0"><a class="fs_md fw_regular" href="">Get quotes</a></li>
+            <li class="ms-md-5 ms-0  mt-5 mt-md-0"><a class="fs_md fw_regular" href="">categories</a></li>
+            <div class=""> <a
+                class="clr_white bgc_darksky fs_md fw_regular py-3 px-4 d-inline-block   rounded-3 sh d-md-none mt-5  ms-md-5 ms-0 "
+                href="">Register</a></div>
+          </ul>
+          <a class="clr_white bgc_darksky fs_md fw_regular py-3 px-4 d-inline-block   rounded-3 sh d-none d-md-flex"
+            href="">Register</a>
+          <a class="span_line d-md-none " href="#" onclick="shownav()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div class="main position-relative"><img class="w-100" src="./assets/images/png/Group 1.png" alt="">
+
+      <div class="position-absolute left_50 bottom_50">
+        <div class="d-flex justify-content-center ">
+          <p class="fs_3xl fw_semibold w_lg_600 w_md_435 clr_medium_blue width_sm_322 w_xsm_248 ">Book a service or
+            raise a
+            <span class="clr_white fw_medium"> complaint</span> In 60 seconds </p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <input
+            class="option pe-2 width_md_270 h_md_39 w_sm_171 h_sm_30 fs_sm_10 w_auto w_xsm_135 h_xsm_20 fs_xsm_8 fs_md_14"
+            type="text" placeholder="search business type or name">
+          <div
+            class="bgc_white option2 d-flex align-items-center width_md_108 h_md_39 w_sm_104 h_sm_30 w_auto w_xsm_70 h_xsm_20">
+            <img class="ps-2 d_xsm_none" src="./assets/images/png/area sign.png" alt=""> <input
+              class="option2 width_md_108 h_md_39 w_sm_104 h_sm_30 w_xsm_70 h_xsm_20" type="text">
+          </div>
+          <img class="h_md_39 h_sm_30 h_xsm_20 w_none" src="./assets/images/png/search bar.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <section class="container ">
+
+      <div class="row   transform  justify-content-center align-items-center ">
+        <div class="col-lg-2  col-md-3 col-sm-4  col_xsm_6 ">
+          <div class="b d-flex justify-content-center align-items-center flex-column pt-3 px-5 ">
+            <div class="circle d-flex justify-content-center align-items-center">
+              <img src="./assets/images/png/tap.png" alt="">
+            </div>
+            <p class="fs_xl fw_regular mt-3 ">plumbers</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col_xsm_6">
+          <div class="b d-flex justify-content-center align-items-center flex-column pt-3 px-5 ">
+            <div class="circle d-flex justify-content-center align-items-center mx-5">
+              <img src="./assets/images/png/teeth.png" alt="">
+            </div>
+            <p class="fs_xl fw_regular mt-3">Dentists</p>
+          </div>
+        </div>
+        <div class="col-lg-2  col-md-3 d-none d-md-block">
+          <div class="b d-flex justify-content-center align-items-center flex-column pt-3 px-5">
+            <div class="circle d-flex justify-content-center align-items-center">
+              <img src="./assets/images/png/knife.png" alt="">
+            </div>
+            <p class="fs_xl fw_regular mt-3">Restaurants</p>
+          </div>
+        </div>
+        <div class="col-lg-2    d-none  d-lg-block ">
+          <div class="b d-flex justify-content-center align-items-center flex-column pt-3 px-5 ">
+            <div class="circle d-flex justify-content-center align-items-center">
+              <img src="./assets/images/png/plaas.png" alt="">
+            </div>
+            <p class="fs_xl fw_regular mt-3">Electricians</p>
+          </div>
+        </div>
+        <div class="col-lg-2   left_12 bottom_2 d-none  d-lg-block ">
+          <div class="b d-flex justify-content-center align-items-center flex-column pt-3 px-5 ">
+            <div class="circle d-flex justify-content-center align-items-center">
+              <img src="./assets/images/png/sethscope.png" alt="">
+            </div>
+            <p class="fs_xl fw_regular mt-3">Surgeons</p>
+          </div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-2 d-none d-sm-block col_xsm_1"><img
+            src="./assets/images/png/arrow sign.png" alt=""></div>
+      </div>
+      <div class="text-end"><a
+          class="clr_white bgc_darksky fs_md fw_regular py-2 px-3 d-inline-block  fs_sm rounded-3 sh d-sm-none mt-5"
+          href="">view more</a></div>
+
+    </section>
+    <section class="">
+      <div class="container  ">
+        <div class="row justify-content-between align-items-center justify_xsm_center">
+          <div class="col-lg-6 col_xsm_12"><img class="w_xsm_100" src="./assets/images/png/persons standing.png" alt="">
+          </div>
+          <div class="col-lg-5 col_xsm_12">
+            <p class="fs_2xl fw_medium clr_blue mt-md-3 mt-lg-0 mt-sm-3  txt_xsm_center mb_xsm_0">Get Free <span
+                class="clr_medium_blue">Quotes</span> </p>
+            <p class="fw_regular fs_md txt_xsm_center">Wgeather you need a builder or a locksmith, a
+              hairdresser or a florist, Yellow Pages has thousand of
+              local buisness ready to quotes your job. Compare
+              multiple quotes so you get the right fit, the first time.</p>
+            <div class="txt_xsm_center"> <a
+                class="clr_white bgc_darksky fs_md fw_regular py-3 px-4 d-inline-block   rounded-3 sh" href="">Get
+                Quotes</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5 position-relative ">
+      <div class="container pt-lg-5 pt-2">
+        <p class="text-center clr_blue fs_2xl fw_medium">Take your <span class="clr_medium_blue"> business</span> to new
+          <span class="clr_medium_blue">heights.</span> </p>
+        <div class="gradient "></div>
+        <p class="mt-4 fs_md fw_regular text-center w_60 m-auto">Delivering an online company directory that satisfies
+          Google's exacting standards is a top priority
+          for our knowledgeable staff. We change the back-end frequently to stay current with search
+          algorithms. You only need to list your company. We handle everything else.</p>
+        <img class="position-absolute left_2 d-none d-lg-flex" src="./assets/images/png/clrful spot.png" alt="">
+        <div class="d-flex justify-content-end mt-sm-5 mt_xsm_3"> <a
+            class="clr_white bgc_darksky fs_md fw_regular  d-inline-block py-sm-3 px-sm-4 py_xsm_2 px_xsm_3   rounded-3 sh me-5 p_xsm_0"
+            href="">List
+            Your Business</a><a
+            class="clr_white bgc_darksky fs_md fw_regular py-sm-3 px-sm-4 py_xsm_2 px_xsm_3  d-inline-block   rounded-3 sh  "
+            href="">Get
+            Quotes</a></div>
+      </div>
+    </section>
+
+
+    <section class="mt-5 ">
+      <div class="container pt-5 overflow-hidden ">
+
+        <p class="text-center clr_blue fs_2xl fw_medium mb-5">Popular <span class="clr_medium_blue"> categories</span>
+          on
+          <span class="clr_medium_blue ">BLUISH</span> </p>
+        <div class="tab_responsive">
+          <table class="w-100 text-center">
+            <tr class="clr_blue fs_md fw_semibold bgc_lightblue ">
+              <th>Sydney</th>
+              <th>Melodumn</th>
+              <th>Brisbane</th>
+              <th>Adelaide</th>
+              <th>Perth</th>
+            </tr>
+            <tr class="bgc_white ">
+              <td>plumbers</td>
+              <td>plumbers</td>
+              <td>plumbers</td>
+              <td>plumbers</td>
+              <td>plumbers</td>
+
+            </tr>
+            <tr class="bgc_white">
+              <td>Electricans</td>
+              <td>Electricans</td>
+              <td>Electricans</td>
+              <td>Electricans</td>
+              <td>Electricans</td>
+
+            </tr>
+            <tr class="bgc_white">
+              <td>Locksmiths</td>
+              <td>Locksmiths</td>
+              <td>Locksmiths</td>
+              <td>Locksmiths</td>
+              <td>Locksmiths</td>
+            </tr>
+            <tr class="bgc_white">
+              <td>Lawyers</td>
+              <td>Lawyers</td>
+              <td>Lawyers</td>
+              <td>Lawyers</td>
+              <td>Lawyers</td>
+
+            </tr>
+            <tr class="bgc_white">
+              <td>Mechanics</td>
+              <td>Mechanics</td>
+              <td>Mechanics</td>
+              <td>Mechanics</td>
+              <td>Mechanics</td>
+
+            </tr>
+            <tr class="bgc_white">
+              <td>Pest Control</td>
+              <td>Pest Control</td>
+              <td>Pest Control</td>
+              <td>Pest Control</td>
+              <td>Pest Control</td>
+
+            </tr>
+            <tr class="bgc_white">
+              <td>Auto Electricians</td>
+              <td>Auto Electricians</td>
+              <td>Auto Electricians</td>
+              <td>Auto Electricians</td>
+              <td>Auto Electricians</td>
+
+            </tr>
+            <tr class="bgc_white">
+              <td>Accountants</td>
+              <td>Accountants</td>
+              <td>Accountants</td>
+              <td>Accountants</td>
+              <td>Accountants</td>
+            </tr>
+            <tr class="bgc_white">
+              <td>Doctors</td>
+              <td>Doctors</td>
+              <td>Doctors</td>
+              <td>Doctors</td>
+              <td>Doctors</td>
+            </tr>
+            <tr class="bgc_white">
+              <td>Builders</td>
+              <td>Builders</td>
+              <td>Builders</td>
+              <td>Builders</td>
+              <td>Builders</td>
+            </tr>
+            <tr class="bgc_white">
+              <td>Contractors</td>
+              <td>Contractors</td>
+              <td>Contractors</td>
+              <td>Contractors</td>
+              <td>Contractors</td>
+            </tr>
+            <tr class="bgc_white">
+              <td>Auto Wreckers</td>
+              <td>Auto Wreckers</td>
+              <td>Auto Wreckers</td>
+              <td>Auto Wreckers</td>
+              <td>Auto Wreckers</td>
+            </tr>
+            <tr class="bgc_white">
+              <td>Lawn Mowing Services</td>
+              <td>Lawn Mowing Services</td>
+              <td>Lawn Mowing Services</td>
+              <td>Lawn Mowing Services</td>
+              <td>Lawn Mowing Services</td>
+            </tr>
+            <tr class="bgc_white">
+              <td>Air Conditioning</td>
+              <td>Air Conditioning</td>
+              <td>Air Conditioning</td>
+              <td>Air Conditioning</td>
+              <td>Air Conditioning</td>
+            </tr>
+            <tr class="bgc_white">
+              <td>Handyman Services</td>
+              <td>Handyman Services</td>
+              <td>Handyman Services</td>
+              <td>Handyman Services</td>
+              <td>Handyman Services</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="position-relative mt-lg-5 mt_xsm_0 pt-lg-5 overflow-hidden ">
+      <img class="position-absolute z-n1 top_lg_15 top_md_4 top_lg_15 left_0 scale_8_lg_transform top_sm_23"
+        src="./assets/images/png/blue line.png" alt="">
+      <div class="row  w-100 rotate align-items-center justify-content-lg-around justify-content-md-between">
+        <div class="col-md-4 col-sm-12 text-sm-center txt_xsm_center">
+          <img class="transform_scale" src="./assets/images/png/men white shirt.png" alt=""></div>
+        <div class="col-md-5 col-sm-12 text-sm-center txt_xsm_center">
+          <p class="fs_2xxl fw_small clr_darkblue ">Subscribe Our Newsletter</p>
+          <p class="fw_regular fs_sm">Follow our social media and get updates about jobs and artcles
+            that we present especiallu for you.</p>
+          <div class="d-flex bgc_skyclr radius_49 w_74 justify-content-center py-2 margin_0_auto mb-sm-4 mb-md-0"><input
+              class="email_input bgc_skyclr fs_xsm_8 fs_sm_14 ms-3 w_md_100 input_width fs_xsm_sm" type="text"
+              placeholder="Enter your email">
+            <a class="clr_white bgc_darksky d-inline-block fs_md fw_regular py-2 px-3 radius_44" href="">Subscribe</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="position-relative ">
+      <div class="container">
+        <div class="row justify-content-between mt-lg-5 mt_xsm_0 pt-5">
+          <div class="col-lg-6 col-md-12">
+            <p class="fs_2xl fw_medium clr_blue">Our Latest <span class="clr_medium_blue">Blogs</span> </p>
+            <p class="fs_md fw_small">Read articles and intresting tips about the world at work that we
+              have provided to broaden your horizons</p>
+            <div class="row">
+              <div class="col-6">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                  <div> <img class="mb-2 w-100" src="./assets/images/png/clock_img.png" alt="">
+                    <p class="fs_md fw_medium clr_darkblue">Tortor et consequat ac mattis vitae dolor rutrum cras elit.
+                    </p>
+                    <p class="fw_regular fs_md">Porttitor nulla tristique ultrices sit malesuada aliquam tortor. Eu nam
+                      magnis
+                      sit purus interdum.</p>
+                  </div>
+                  <p class="fs_sm fw_semibold clr_darkblue">Join now </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="d-flex flex-column h-100">
+                  <div> <img class="mb-2 w-100 mx-auto" src="./assets/images/png/cup_img.png" alt="">
+                    <p class="fs_md fw_medium clr_darkblue">Donec at lorem pulvinar et rutrum pellentesque id et. </p>
+                    <p class="fw_regular fs_md">Facilisis nullam aliquet dictum egestas. Volutpat a ultrices etiam non
+                      risus
+                      ipsum sed adipiscing.
+                      magnis
+                      sit purus interdum.</p>
+                  </div>
+                  <p class="fs_sm fw_semibold clr_darkblue">Join now </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 text-md-center text-sm-center txt_xsm_center">
+            <p class="fs_2xl fw_medium clr_blue mt-md-4 mt-lg-0 mt-sm-3 mt-md-0 mt_xsm_3"> <span
+                class="clr_medium_blue">Popular</span> tips for
+              you</p>
+            <div
+              class="d-flex  align-items-center justify-content-md-center me-md-5 me-lg-0 mt-md-3 mt-lg-5 justify-content-sm-center mt-sm-3 mt-md-0 justify_xsm_center mt_xsm_0">
+              <div>
+                <p class="clr_blue fs_md fw_medium">Velit mauris laoreet quis vivamus nisl dui id sed sit.</p>
+                <p class="fs_sm fw_regular">27,March 2021</p>
+              </div>
+              <img src="./assets/images/png/hand img.png" alt="">
+            </div>
+            <div
+              class="d-flex mt-4 align-items-center justify-content-md-center justify-content-sm-center ms-sm-5 ms-md-0 justify_xsm_center ms_xsm_4">
+              <div>
+                <p class="clr_blue fs_md fw_medium me-4">Sed pellentesque elementum sodales.</p>
+                <p class="fs_sm fw_regular">27,March 2021</p>
+              </div>
+              <img src="./assets/images/png/clr_painting.png" alt="">
+            </div>
+            <div
+              class="d-flex mt-4 align-items-center justify-content-md-center me-md-5 me-lg-0 justify-content-sm-center justify_xsm_center">
+              <div>
+                <p class="clr_blue fs_md fw_medium me-4">Integer et amet vitae imperdiet ac sed ut. Id.</p>
+                <p class="fs_sm fw_regular">27,March 2021</p>
+              </div>
+              <img src="./assets/images/png/brush_img.png" alt="">
+            </div>
+            <div
+              class="d-flex mt-4 align-items-center justify-content-md-center me-md-4 me-lg-0 justify-content-sm-center justify_xsm_center">
+              <div>
+                <p class="clr_blue fs_md fw_medium">Cursus interdum viverra aliquet vitae purus. </p>
+                <p class="fs_sm fw_regular">27,March 2021</p>
+              </div>
+              <img src="./assets/images/png/cube_img.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="position-absolute  bottom_-5 left_0 d-none d-lg-flex" src="./assets/images/png/clrful spot2.png"
+        alt="">
+    </section>
+    <section class="pb-5 ">
+      <div class="container ">
+        <div class="row justify-content-between mt-lg-5 mt_xsm_0 pt-5">
+          <div class="col-md-4 col-sm-12 text_xsm_center text-sm-center text-md-start">
+            <p class="fw_regular fs_lg clr_darksky">Testimonial </p>
+            <p class="fs_2xl fw_medium clr_darkblue">See what they say
+              <span class="clr_medium_blue">about</span> us</p>
+            <p class="fs_sm fw_regular">Dui, sed lectus libero vel elementum turpis faucibus commodo. Amet odio vehicula
+              eget ligula est mattis.
+            </p>
+            <div class="d-flex">
+              <div class="d-none d-md-flex"> <a class="btn_arrow1 d-inline-block pre  btn_hover " href=""><img class=""
+                    src="./assets/images/png/Arrow 1.png" alt=""></a></div>
+              <div class="d-none d-md-flex"><a class="btn_arrow2 d-inline-block next  btn_hover" href=""><img class=""
+                    src="./assets/images/png/Arrow 2.png" alt=""></a></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class=" responsive">
+              <div class="mx-2">
+                <div class="bgc_white py-4  border_radius_20 h-100">
+                  <div class="text-center "> <img class="mx-auto" src="./assets/images/png/lady_img.png" alt="">
+                    <p class="clr_darkblue fs_sm fw_regular mt-3">Caplin Brookly</p>
+                    <p class="fs_sm fw_regular text-center">Tempor semper ultricies ac libero, facilisis rutrum mattis.
+                      Amet
+                      et nibh faucibus enim proin. Faucibus.
+                    </p>
+                    <div><a class="fs_sm fw_semibold clr_medium_blue text-center" href="">Learn More</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mx-2">
+                <div class="bgc_white py-4  border_radius_20 ms-3 drop_shadow px-2 h-100">
+                  <div class="text-center "> <img class="mx-auto" src="./assets/images/png/man.png" alt="">
+                    <p class="clr_darkblue fs_sm fw_regular mt-3">Caplin Brookly</p>
+                    <p class="fs_sm fw_regular text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ullamcorper sagittis elit lacinia.
+                    </p>
+                    <div class="text-center"><a class="fs_sm fw_semibold clr_medium_blue " href="">Learn More</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mx-2">
+                <div class="bgc_white py-4  border_radius_20 h-100">
+                  <div class="text-center ">
+                    <img class="mx-auto" src="./assets/images/png/lady_img.png" alt=""></div>
+                  <p class="clr_darkblue fs_sm fw_regular mt-3 text-center">Caplin Brookly</p>
+                  <p class="fs_sm fw_regular text-center">Tempor semper ultricies ac libero, facilisis rutrum mattis.
+                    Amet
+                    et nibh faucibus enim proin. Faucibus.
+                  </p>
+                  <div class="text-center"><a class="fs_sm fw_semibold clr_medium_blue " href="">Learn More</a></div>
+
+                </div>
+              </div>
+              <div class="mx-2">
+                <div class="bgc_white py-4  border_radius_20 ms-3 drop_shadow px-2 h-100">
+                  <div class="text-center "> <img class="mx-auto" src="./assets/images/png/man.png" alt="">
+                    <p class="clr_darkblue fs_sm fw_regular mt-3">Caplin Brookly</p>
+                    <p class="fs_sm fw_regular text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ullamcorper sagittis elit lacinia.
+                    </p>
+                    <div class="text-center"><a class="fs_sm fw_semibold clr_medium_blue " href="">Learn More</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bgc_lightblue mt-lg-5 py-lg-5 py_xsm_3 mt_xsm_0 pt-sm-2 pb-sm-1 ">
+      <div class="container">
+
+        <p class="fs_4xl fw_medium clr_darkblue text-center mt-lg-5 mt_xsm_0">When Do Start? We’re Ready to Assist
+          You! Connect With Us Today.</p>
+        <div class="text-center  mb-5 mt-md-3 mt-lg-0 mt-sm-2 mt-md-0 mt-0"> <a
+            class="fs_md fw_medium clr_white bgc_darksky py-3 px-4 radius_6 d-inline-block" href="">Contact
+            Us</a></div>
+      </div>
+      </div>
+    </section>
+    <footer class="bgc_black py-5 overflow-hidden">
+      <div class="container ">
+        <div class="row align-items-center justify-content-lg-between  justify-content-md-between">
+          <div class="col-lg-5 col-md-12 text-center  d-lg-none col-sm-12 text_xsm_center">
+            <p class="clr_medium_blue fs_2xl fw_medium mb-0 mt-4 mt-sm-0 mb-sm-2 mt-sm-4">Get in touch</p>
+            <p class="fs_md fw_regular clr_white">Enter your details to get business inspiration, trending
+              solution and consulting tips delivered to your inbox.</p>
+            <div class="d-flex justify-content-center"><input class="ps-3 radius_5" type="text"
+                placeholder="Your Email Address">
+              <a class="fs_md fw_small clr_white bgc_darksky footer_shadow p-2 btn_subscirbe" href="">Subscribe</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-5 col-sm-6 text_xsm_center ms_xsm_4 ">
+            <ul class="p-0">
+              <li class="mb-2"><a class="clr_white fs_base fw_medium" href="">About</a></li>
+              <li class="mb-2"><a class="clr_white fs_md fw_small" href="">Services</a></li>
+              <li class="mb-2"><a class="clr_white fs_md fw_small" href="">Advisors</a></li>
+              <li class="mb-2"><a class="clr_white fs_md fw_small" href="">Testimonials</a></li>
+              <li><a class="clr_white fs_md fw_small" href="">Blog and News</a></li>
+
+            </ul>
+            <div class="mt_xsm_3 "> <a class="me-2 " href=""><svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.625 2.57812C10.6589 2.57812 2.57812 10.6589 2.57812 20.625C2.57812 30.5911 10.6589 38.6719 20.625 38.6719C30.5911 38.6719 38.6719 30.5911 38.6719 20.625C38.6719 10.6589 30.5911 2.57812 20.625 2.57812ZM29.298 16.1818C29.3101 16.3711 29.3101 16.5685 29.3101 16.7618C29.3101 22.6754 24.8064 29.4873 16.5765 29.4873C14.0387 29.4873 11.6862 28.7501 9.70422 27.4812C10.0668 27.5215 10.4132 27.5376 10.7838 27.5376C12.8785 27.5376 14.8041 26.8286 16.3389 25.6282C14.373 25.5879 12.7214 24.2988 12.1575 22.5264C12.8463 22.6271 13.4667 22.6271 14.1757 22.4458C13.1634 22.2402 12.2536 21.6904 11.6008 20.89C10.948 20.0896 10.5924 19.0878 10.5945 18.0549V17.9985C11.1866 18.3329 11.8835 18.5383 12.6127 18.5665C11.9997 18.158 11.4971 17.6046 11.1492 16.9553C10.8014 16.306 10.6191 15.5809 10.6187 14.8444C10.6187 14.0105 10.8362 13.2491 11.2269 12.5885C12.3504 13.9716 13.7524 15.1027 15.3417 15.9085C16.931 16.7143 18.6721 17.1766 20.4518 17.2654C19.8193 14.224 22.0913 11.7627 24.8225 11.7627C26.1116 11.7627 27.2717 12.3025 28.0895 13.1726C29.1006 12.9833 30.0674 12.6046 30.9294 12.097C30.5951 13.1323 29.8942 14.0065 28.9636 14.5583C29.866 14.4617 30.7361 14.2119 31.5417 13.8615C30.9335 14.7557 30.1721 15.5493 29.298 16.1818Z"
+                    fill="white" />
+                </svg></a>
+              <a class="me-2 " href=""><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.75 16.7171C0.75 24.9204 6.70788 31.7418 14.5 33.125V21.2079H10.375V16.625H14.5V12.9579C14.5 8.83288 17.1579 6.54212 20.9171 6.54212C22.1079 6.54212 23.3921 6.725 24.5829 6.90788V11.125H22.475C20.4579 11.125 20 12.1329 20 13.4171V16.625H24.4L23.6671 21.2079H20V33.125C27.7921 31.7418 33.75 24.9218 33.75 16.7171C33.75 7.59125 26.325 0.125 17.25 0.125C8.175 0.125 0.75 7.59125 0.75 16.7171Z"
+                    fill="white" />
+                </svg></a>
+              <a class="me-2 " href=""><svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_433)">
+                    <path
+                      d="M16.7502 0.784668C8.00186 0.784668 0.910156 7.87637 0.910156 16.6247C0.910156 25.373 8.00186 32.4647 16.7502 32.4647C25.4985 32.4647 32.5902 25.373 32.5902 16.6247C32.5902 7.87637 25.4985 0.784668 16.7502 0.784668ZM12.8727 23.19H9.66506V12.8676H12.8727V23.19ZM11.2491 11.6004C10.236 11.6004 9.58091 10.8827 9.58091 9.99497C9.58091 9.08912 10.2558 8.39282 11.2903 8.39282C12.3249 8.39282 12.9585 9.08912 12.9783 9.99497C12.9783 10.8827 12.3249 11.6004 11.2491 11.6004ZM24.5877 23.19H21.3801V17.4695C21.3801 16.1379 20.9148 15.2337 19.7548 15.2337C18.8688 15.2337 18.3424 15.8459 18.1098 16.4349C18.024 16.6445 18.0025 16.9415 18.0025 17.2368V23.1884H14.7933V16.1594C14.7933 14.8707 14.752 13.7933 14.7091 12.866H17.496L17.6428 14.2998H17.7072C18.1296 13.6266 19.1641 12.6333 20.895 12.6333C23.0053 12.6333 24.5877 14.0474 24.5877 17.0867V23.19Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_433">
+                      <rect width="33" height="33" fill="white" transform="translate(0.25 0.125)" />
+                    </clipPath>
+                  </defs>
+                </svg></a>
+              <a href=""><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.3718 11.2551C13.415 11.2551 11.0021 13.6681 11.0021 16.6249C11.0021 19.5816 13.415 21.9946 16.3718 21.9946C19.3286 21.9946 21.7416 19.5816 21.7416 16.6249C21.7416 13.6681 19.3286 11.2551 16.3718 11.2551ZM32.477 16.6249C32.477 14.4012 32.4972 12.1977 32.3723 9.97813C32.2474 7.4 31.6593 5.11192 29.774 3.22666C27.8847 1.33738 25.6007 0.753273 23.0226 0.628395C20.7989 0.503517 18.5954 0.523659 16.3758 0.523659C14.1522 0.523659 11.9487 0.503517 9.7291 0.628395C7.15098 0.753273 4.86289 1.34141 2.97764 3.22666C1.08836 5.11594 0.50425 7.4 0.379372 9.97813C0.254494 12.2018 0.274636 14.4053 0.274636 16.6249C0.274636 18.8445 0.254494 21.052 0.379372 23.2716C0.50425 25.8497 1.09238 28.1378 2.97764 30.023C4.86692 31.9123 7.15098 32.4964 9.7291 32.6213C11.9527 32.7462 14.1562 32.7261 16.3758 32.7261C18.5995 32.7261 20.803 32.7462 23.0226 32.6213C25.6007 32.4964 27.8888 31.9083 29.774 30.023C31.6633 28.1338 32.2474 25.8497 32.3723 23.2716C32.5012 21.052 32.477 18.8485 32.477 16.6249ZM16.3718 24.8869C11.7997 24.8869 8.10972 21.197 8.10972 16.6249C8.10972 12.0527 11.7997 8.36277 16.3718 8.36277C20.9439 8.36277 24.6339 12.0527 24.6339 16.6249C24.6339 21.197 20.9439 24.8869 16.3718 24.8869ZM24.9723 9.95396C23.9048 9.95396 23.0427 9.0919 23.0427 8.02439C23.0427 6.95689 23.9048 6.09483 24.9723 6.09483C26.0398 6.09483 26.9018 6.95689 26.9018 8.02439C26.9022 8.27787 26.8525 8.52893 26.7556 8.76318C26.6587 8.99743 26.5166 9.21027 26.3374 9.38951C26.1581 9.56875 25.9453 9.71087 25.7111 9.80773C25.4768 9.90458 25.2258 9.95427 24.9723 9.95396Z"
+                    fill="white" />
+                </svg></a></div>
+          </div>
+          <div class="col-lg-5 col-md-12 text-center d-none d-lg-block">
+            <p class="clr_medium_blue fs_2xl fw_medium mb-0 mt-4 mt-sm-0 mb-sm-2 mt-sm-4">Get in touch</p>
+            <p class="fs_md fw_regular clr_white">Enter your details to get business inspiration, trending
+              solution and consulting tips delivered to your inbox.</p>
+            <div class="d-flex justify-content-center"><input class="ps-3 radius_5" type="text"
+                placeholder="Your Email Address">
+              <a class="fs_md fw_small clr_white bgc_darksky footer_shadow p-2 btn_subscirbe" href="">Subscribe</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 mt-lg-5 text-md-end text-lg-start text_xsm_center mt-4">
+            <ul>
+              <li class="mb-2"><a class="clr_white fs_base fw_medium" href="">Register</a></li>
+              <li class="mb-2"><a class="clr_white fs_md fw_small" href="">Faq</a></li>
+              <li class="mb-2"><a class="clr_white fs_md fw_small" href="">Support Center</a></li>
+              <li class="mb-2"><a class="clr_white fs_md fw_small" href="">Privacy and Policies</a></li>
+              <li><a class="clr_white fs_md fw_small" href="">Terms and Conditions</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+  </script>
+  <!-- ---------jquery.min.js-------  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- -----------slick.min.js--------  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.responsive').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      nextArrow: $('.next'),
+      prevArrow: $('.pre'),
+
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      responsive: [{
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 419,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  </script>
+  <script src="./assets/app.js"></script>
+</body>
+
+</html>

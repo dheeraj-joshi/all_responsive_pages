@@ -1,0 +1,532 @@
+@font-face {
+    font-family: "Agnostic";
+    src: url("../fonts/Agnostic\ 400.otf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    list-style-type: none !important;
+    /* cursor: none; */
+}
+
+:root {
+    /* font-size */
+    --fs_xsm: 12px;
+    --fs_lxsm: 16px;
+    --fs_sm: 18px;
+    --fs_lsm: 18.89px;
+    --fs_md: 20px;
+    --fs_lmd: 25px;
+    --fs_lg: 36px;
+    --fs_llg: 40px;
+    --fs_xl: 42px;
+    --fs_2xl: 80px;
+    --fs_3xl: 81.55px;
+    --fs_4xl: 85.13px;
+
+    /* color */
+    --color_white: #FFFFFF;
+    --color_cream: #FFFF8E;
+    --radial_gradient: radial-gradient(110.62% 37.31% at 50.00% 50.00%, #A36841 0%, #976140 27.00%, #764E3D 75%, #63433B 100%);
+    box-shadow: 0px 15px 28px 0px rgba(0, 0, 0, 0.25);
+    --color_brown: #49312C;
+    --color_brn: #3E2022;
+
+
+    /* font-family */
+    --ff_poppins: 'Poppins',
+        sans-serif;
+    --ff_Agnostic: 'Agnostic';
+
+}
+
+.fs_xsm {
+    font-size: var(--fs_xsm);
+    
+}
+
+.fs_lxsm {
+    font-size: var(--fs_lxsm);
+}
+
+.fs_sm {
+    font-size: var(--fs_sm);
+}
+
+.fs_lsm {
+    font-size: var(--fs_lsm);
+}
+
+.fs_md {
+    font-size: var(--fs_md);
+}
+
+.fs_lmd {
+    font-size: var(--fs_lmd);
+}
+
+.fs_lg {
+    font-size: var(--fs_lg);
+}
+
+.fs_llg {
+    font-size: var(--fs_llg);
+}
+
+.fs_xl {
+    font-size: var(--fs_xl);
+}
+
+.fs_2xl {
+    font-size: var(--fs_2xl);
+}
+
+.fs_3xl {
+    font-size: var(--fs_3xl);
+}
+
+.fs_4xl {
+    font-size: var(--fs_4xl);
+}
+
+.bgc_brown {
+    background-color: var(--color_brown);
+}
+
+.bgc_brwn {
+    background-color: var(--color_brn);
+}
+
+.clr_cream {
+    color: var(--color_cream);
+}
+
+.radial_gradient {
+    background: var(--radial_gradient);
+}
+
+.ff_agnostic {
+
+    font-family: var(--ff_Agnostic);
+}
+
+.ff_poppins {
+    font-family: var(--ff_poppins);
+}
+
+.bg_img {
+    background: url("../images/png/Mask\ Group.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 120vh;
+    position: relative;
+    z-index: 5;
+}
+
+.bg_building {
+    background: url("../images/png/building_2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -188px;
+    min-height: 100vh;
+
+
+
+}
+
+.bg_red {
+    background: url("../images/png/bg_red.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -48px;
+
+
+
+}
+
+.bg_red_2 {
+    background: url("../images/png/red_2_bg.png");
+    background-size: cover;
+    background-repeat: no repeat;
+}
+
+.green_img {
+    background: url("../images/png/Group\ 130.png");
+    background-size: cover;
+    background-repeat: no repeat;
+    margin-top: -250px;
+}
+
+
+.span_line {
+    display: flex;
+    flex-direction: column;
+}
+
+.span_line span {
+    height: 4px;
+    width: 35px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.span_line span:nth-child(2) {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.clr_white {
+    color: var(--color_white);
+}
+
+.road {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.box_shadow {
+    box-shadow: 0px 25px var(--color_brown);
+}
+
+.text_shadow {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.move_4 {
+    transform: translateY(20%);
+}
+
+.nav_items {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+    width: 7 0%;
+    bottom: 0%;
+    left: -100%;
+    background-image: radial-gradient(110.62% 37.31% at 50.00% 50.00%, #A36841 0%, #976140 27.00%, #764E3D 75%, #63433B 100%);
+    transition: 0.5s;
+
+
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+}
+
+.shownav {
+    left: 0px;
+    transition: 0.5s;
+}
+
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 1000000;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+
+@media (max-width:576px) {
+    :root {
+        --fs_xsm: 12px;
+        --fs_lxsm: 16px;
+        --fs_sm: 18px;
+        --fs_lsm: 18.89px;
+        --fs_md: 20px;
+        --fs_lmd: 25px;
+        --fs_lg: 36px;
+        --fs_llg: 40px;
+        --fs_xl: 42px;
+        --fs_2xl: 40px;
+        --fs_3xl: 42.55px;
+        --fs_4xl: 48.13px;
+    }
+
+    .bg_red {
+        background: url(../images/png/bg_red.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -76px;
+    }
+
+    .bg_building {
+        background: url(../images/png/building_2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -253px;
+        min-height: 100vh;
+    }
+
+    .w_xsm_40 {
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    .green_img {
+        background: url(../images/png/Group\ 130.png);
+        background-size: cover;
+        background-repeat: no repeat;
+        margin-top: -294px;
+    }
+
+    .bg_img {
+        background: url("../images/png/Mask\ Group.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 80vh;
+        position: relative;
+        z-index: 5;
+    }
+}
+
+@media (min-width:576px) {
+    :root {
+        --fs_xsm: 12px;
+        --fs_lxsm: 16px;
+        --fs_sm: 18px;
+        --fs_lsm: 18.89px;
+        --fs_md: 20px;
+        --fs_lmd: 25px;
+        --fs_lg: 36px;
+        --fs_llg: 40px;
+        --fs_xl: 42px;
+        --fs_2xl: 52px;
+        --fs_3xl: 55.55px;
+        --fs_4xl: 58.13px;
+    }
+
+    .bg_red {
+        background: url(../images/png/bg_red.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -90px;
+    }
+
+    .w_xsm_40 {
+        width: auto;
+
+    }
+
+    .bg_building {
+        background: url(../images/png/building_2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -258px;
+        min-height: 100vh;
+    }
+
+    .green_img {
+        background: url(../images/png/Group\ 130.png);
+        background-size: cover;
+        background-repeat: no repeat;
+        margin-top: -319px;
+    }
+
+}
+
+@media (min-width:768px) {
+    :root {
+        --fs_xsm: 12px;
+        --fs_lxsm: 16px;
+        --fs_sm: 18px;
+        --fs_lsm: 18.89px;
+        --fs_md: 20px;
+        --fs_lmd: 25px;
+        --fs_lg: 36px;
+        --fs_llg: 40px;
+        --fs_xl: 42px;
+        --fs_2xl: 55px;
+        --fs_3xl: 60.55px;
+        --fs_4xl: 62.13px;
+    }
+
+    .w_xsm_40 {
+        width: auto;
+
+    }
+
+    .bg_red {
+        background: url(../images/png/bg_red.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -93px;
+    }
+
+    .bg_building {
+        background: url(../images/png/building_2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -264px;
+        min-height: 100vh;
+    }
+
+    .green_img {
+        background: url(../images/png/Group\ 130.png);
+        background-size: cover;
+        background-repeat: no repeat;
+        margin-top: -262px;
+    }
+}
+
+@media (min-width:992px) {
+    :root {
+        --fs_xsm: 12px;
+        --fs_lxsm: 16px;
+        --fs_sm: 18px;
+        --fs_lsm: 18.89px;
+        --fs_md: 20px;
+        --fs_lmd: 25px;
+        --fs_lg: 36px;
+        --fs_llg: 40px;
+        --fs_xl: 42px;
+        --fs_2xl: 65px;
+        --fs_3xl: 67.55px;
+        --fs_4xl: 69.13px;
+    }
+
+    .bg_building {
+        background: url(../images/png/building_2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -201px;
+        min-height: 100vh;
+    }
+
+    .bg_red {
+        background: url(../images/png/bg_red.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -92px;
+    }
+
+}
+
+@media (min-width:1200px) {
+    :root {
+        --fs_xsm: 12px;
+        --fs_lxsm: 16px;
+        --fs_sm: 18px;
+        --fs_lsm: 18.89px;
+        --fs_md: 20px;
+        --fs_lmd: 25px;
+        --fs_lg: 36px;
+        --fs_llg: 40px;
+        --fs_xl: 42px;
+        --fs_2xl: 72px;
+        --fs_3xl: 73.55px;
+        --fs_4xl: 75.13px;
+    }
+
+    .nav_items {
+        all: unset;
+    }
+
+    .bg_red {
+        background: url(../images/png/bg_red.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -104px;
+    }
+
+    .bg_building {
+        background: url(../images/png/building_2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -204px;
+        min-height: 100vh;
+    }
+}
+
+@media (min-width:1400px) {
+    :root {
+        --fs_xsm: 12px;
+        --fs_lxsm: 16px;
+        --fs_sm: 18px;
+        --fs_lsm: 18.89px;
+        --fs_md: 20px;
+        --fs_lmd: 25px;
+        --fs_lg: 36px;
+        --fs_llg: 40px;
+        --fs_xl: 42px;
+        --fs_2xl: 80px;
+        --fs_3xl: 81.55px;
+        --fs_4xl: 85.13px;
+    }
+
+    .my_container {
+        max-width: 1320px;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin: 0 auto;
+    }
+
+    .bg_red {
+        background: url(../images/png/bg_red.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -121px;
+    }
+
+    .green_img {
+        background: url(../images/png/Group\ 130.png);
+        background-size: cover;
+        background-repeat: no repeat;
+        margin-top: -267px;
+    }
+
+
+
+}
+
+@media (min-width:1900px) {
+    .bg_red {
+        background: url(../images/png/bg_red.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -153px;
+
+    }
+
+    .bg_building {
+        background: url(../images/png/building_2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -237px;
+        min-height: 100vh;
+    }
+
+    .green_img {
+        background: url(../images/png/Group\ 130.png);
+        background-size: cover;
+        background-repeat: no repeat;
+        margin-top: -337px;
+    }
+
+}

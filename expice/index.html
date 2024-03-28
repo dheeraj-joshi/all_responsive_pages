@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>expice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- ---------------slick.min.css------------  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ------------------theme.min.css-------------  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bgc_litecream">
+    <header class="position-relative bg_img min-vh-100 ">
+        <nav class="">
+            <div class="container my_container ">
+                <div class="d-flex align-items-lg-center justify-content-between">
+                    <p class="fs_4xl fw_bold clr_pink mt-3 mt-lg-0">expice</p>
+
+                    <ul class="d-lg-flex align-items-lg-center  nav_items mb-0">
+                          <li class="ms-lg-3"><a class="fs_md fw_regular clr_blue ms-lg-4" href="#MenuOne">Menu One</a>
+                          </li>
+                        <li class="ms-lg-3"><a class="fs_md fw_regular clr_blue ms-lg-4" href="#MenuTwo">Menu Two</a></li>
+                        <li class="ms-lg-3"><a class="fs_md fw_regular clr_blue ms-lg-4" href="#MenuThree">Menu Three</a></li>
+                        <li class="ms-lg-3"><a class="fs_md fw_regular clr_blue ms-lg-4" href="#MenuFour">Menu Four</a>
+                        </li>
+                        <div class="d-lg-none "><a class=" d-inline-block  rounded-5 " href=""><svg width="52"
+                                    height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="26" cy="26" r="26" fill="white" />
+                                    <path
+                                        d="M36.6066 30.3934C34.9729 28.7596 33.0283 27.5502 30.9066 26.8181C33.179 25.253 34.6719 22.6337 34.6719 19.6719C34.6719 14.8902 30.7817 11 26 11C21.2183 11 17.3281 14.8902 17.3281 19.6719C17.3281 22.6337 18.821 25.253 21.0935 26.8181C18.9718 27.5502 17.0272 28.7596 15.3934 30.3934C12.5603 33.2265 11 36.9934 11 41H13.3438C13.3438 34.0213 19.0213 28.3438 26 28.3438C32.9787 28.3438 38.6562 34.0213 38.6562 41H41C41 36.9934 39.4397 33.2265 36.6066 30.3934ZM26 26C22.5107 26 19.6719 23.1613 19.6719 19.6719C19.6719 16.1825 22.5107 13.3438 26 13.3438C29.4893 13.3438 32.3281 16.1825 32.3281 19.6719C32.3281 23.1613 29.4893 26 26 26Z"
+                                        fill="#2E266F" />
+                                    <circle cx="43.5" cy="7.5" r="7.5" fill="#31A24C" />
+                                </svg></a>
+
+                            <select id="cars" class=" fs_md fw_regular clr_blue border-0 max-width_60">
+                                <option value="volvo">user</option>
+                                <option value="saab">account@gmail.com</option>
+                                <option value="opel">account@gmail.com</option>
+                                <option value="audi">account@gmail.com</option>
+                            </select>
+                        </div>
+                    </ul>
+                    <a class="d-lg-none span_line mt-4" href="#" onclick="shownav()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <div class="d-none d-lg-flex"><a class=" d-inline-block p-3 rounded-5" href=""><svg width="52"
+                                height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="26" cy="26" r="26" fill="white" />
+                                <path
+                                    d="M36.6066 30.3934C34.9729 28.7596 33.0283 27.5502 30.9066 26.8181C33.179 25.253 34.6719 22.6337 34.6719 19.6719C34.6719 14.8902 30.7817 11 26 11C21.2183 11 17.3281 14.8902 17.3281 19.6719C17.3281 22.6337 18.821 25.253 21.0935 26.8181C18.9718 27.5502 17.0272 28.7596 15.3934 30.3934C12.5603 33.2265 11 36.9934 11 41H13.3438C13.3438 34.0213 19.0213 28.3438 26 28.3438C32.9787 28.3438 38.6562 34.0213 38.6562 41H41C41 36.9934 39.4397 33.2265 36.6066 30.3934ZM26 26C22.5107 26 19.6719 23.1613 19.6719 19.6719C19.6719 16.1825 22.5107 13.3438 26 13.3438C29.4893 13.3438 32.3281 16.1825 32.3281 19.6719C32.3281 23.1613 29.4893 26 26 26Z"
+                                    fill="#2E266F" />
+                                <circle cx="43.5" cy="7.5" r="7.5" fill="#31A24C" />
+                            </svg></a>
+
+                        <select id="cars" class=" fs_md fw_regular clr_white border-0 max-width_60 bgc_pink">
+                            <option value="volvo">user</option>
+                            <option value="saab">account@gmail.com</option>
+                            <option value="opel">account@gmail.com</option>
+                            <option value="audi">account@gmail.com</option>
+                        </select>
+                    </div>
+                </div>
+                <p class="fs_5xl fw_extrabold opacity_5 m-0 position-absolute top_3 d-none d-lg-flex">Fodc </p>
+            </div>
+        </nav>
+        <section class="">
+            <div class="container my_container">
+                <div class="row mt-lg-5 pt-sm-5 align-items-center ">
+                    <div class="col-sm-6 col-12 text-center text-sm-start ">
+                        <p class="fs_4xl fw_bold clr_blue m-0">Discover Restaurant
+                            & Delicious Food</p>
+                        <div class="d-flex justify-content-sm-around justify-content-evenly mt-4 align-items-center">
+                            <p class="fs_base fw_regular clr_blue">search restaurant, food</p>
+                            <a class="bgc_pink clr_white fs_xl fw_semibold py-md-1 ps-md-5 pe-md-3 d-inline-block border_radius pe-sm-3 py-sm-1 ps-sm-3 pe-1 ps-4 py-1"
+                                href="">Go</a>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-8 position-relative mx-auto">
+                        <div class="position-relative">
+                            <div class="responsive">
+                                <div>
+                                    <img class=" scale_dot  d-none d-lg-flex" src="./assets/images/png/dots.png" alt="">
+                                  
+
+
+                                    <img class="w-100  z-2" src="./assets/images/png/plate.png" alt="">
+                                </div>
+                                <div>
+                                    <img class=" scale_dot  d-none d-lg-flex" src="./assets/images/png/dots.png" alt="">
+
+
+
+                                    
+
+
+
+
+                                </div>
+                                <div>
+                                    <img class=" scale_dot  d-none d-lg-flex" src="./assets/images/png/dots.png" alt="">
+                                  
+
+
+                                    <img class="w-100  z-2" src="./assets/images/png/plate.png" alt="">
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class=" btn_1 d-inline-block d-none d-sm-flex pre" href=""><svg width="66" height="45"
+                                viewBox="0 0 66 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="43.5" cy="22.5" r="21" stroke="white" stroke-width="3" />
+                                <path
+                                    d="M49.4271 20.7268C49.4265 20.7263 49.4261 20.7256 49.4254 20.725L39.2199 10.5687C38.4554 9.8079 37.2187 9.81074 36.4577 10.5754C35.6968 11.3399 35.6997 12.5766 36.4642 13.3375L43.3162 20.1562H1.95312C0.874414 20.1562 0 21.0307 0 22.1094C0 23.1881 0.874414 24.0625 1.95312 24.0625H43.3161L36.4643 30.8812C35.6998 31.6422 35.6969 32.8788 36.4578 33.6433C37.2188 34.4081 38.4556 34.4107 39.22 33.65L49.4255 23.4937C49.4261 23.4931 49.4265 23.4925 49.4272 23.4919C50.1922 22.7284 50.1897 21.4878 49.4271 20.7268Z"
+                                    fill="white" />
+                            </svg></a>
+                        <a class=" btn_2 d-inline-block d-none d-sm-flex next" href=""><svg width="66" height="45"
+                                viewBox="0 0 66 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.5729 23.2732C16.5735 23.2737 16.5739 23.2744 16.5746 23.275L26.7801 33.4313C27.5446 34.1921 28.7813 34.1893 29.5423 33.4246C30.3032 32.6601 30.3003 31.4234 29.5358 30.6625L22.6838 23.8438H64.0469C65.1256 23.8438 66 22.9693 66 21.8906C66 20.8119 65.1256 19.9375 64.0469 19.9375H22.6839L29.5357 13.1188C30.3002 12.3578 30.3031 11.1212 29.5422 10.3567C28.7812 9.59191 27.5444 9.58928 26.78 10.35L16.5745 20.5063C16.5739 20.5069 16.5735 20.5075 16.5728 20.5081C15.8078 21.2716 15.8103 22.5122 16.5729 23.2732Z"
+                                    fill="white" />
+                                <circle cx="22.5" cy="22.5" r="21" stroke="white" stroke-width="3" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex bgc_pink align-items-center position-absolute px-5 rounded-end-pill bottom_4">
+                <a class="d-inline-block" href=""><img src="./assets/images/png/location.png" alt=""></a>
+                <p class="fs_xl fw_medium clr_white mt-3 ms-3">Rajshahi</p>
+            </div>
+        </section>
+    </header>
+    <main class="">
+        <section class="mt-5 pt-xl-4  ">
+            <div class="container my_container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-5 col-xl-5 col-xxl-6 ">
+                        <div class="d-flex align-items-center">
+                            <div class="w_25 h_140 bgc_pink"></div>
+                            <p class="fs_3xl fw_medium text-center clr_blue">some top restaurant for
+                                dining in or Take away!</p>
+                        </div>
+                    </div>
+                    <div class=" col-lg-6 col-xl-6 col-xxl-5 ps-md-5 ps-lg-0 ps-sm-4 ps-4 text-sm-center text-lg-start">
+                        <p class="fs_sm fw_regular clr_grey text-center text-sm-start">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Est,
+                            adipiscing cursus auctor eget sed
+                            phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt.
+                            Volutpat
+                            metus id amet, nam hac magna accumsan. Nascetur ac tortor purus ultrices morbi tellus. Lorem
+                            ipsum
+                            dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="overflow-hidden pb-5 ">
+            <div class="row align-items-center mt-5 pt-5 justify-content-center justify-content-sm-start">
+                <div class="col-md-4 col-sm-6 col-7">
+                    <div class="overlay position-relative overflow-hidden"> <img class="w-100"
+                            src="./assets/images/png/pizza_img.png" alt="">
+                        <div class="fire_water position-absolute ">
+                            <p class="fs_lg fw_bold m-0 clr_white">Fire Water</p>
+                            <p class="fw_regular fs_sm clr_white mb-0">we are all about we are all about to the fullest
+                                and
+                                all content
+                                dining
+                                out or in!dining out or
+                                in!</p>
+                            <div class="d-flex align-items-center"> <img class="mt-xl-2  mb-lg-0"
+                                    src="./assets/images/png/locations.png" alt="">
+                                <p class="fs_sm fw_regular clr_white ms-2 mb-0">New Market</p>
+                            </div>
+                            <div class="text-end mb-3"> <a
+                                    class="clr_pink bgc_white py-xl-3 px-xl-5 py-lg-2 px-lg-4 rounded-start-pill py-sm-1 px-sm-2 px-2 py-1"
+                                    href="">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-7 mt-4 mt-sm-0">
+                    <div class="overlay position-relative overflow-hidden"> <img class="w-100"
+                            src="./assets/images/png/burger_img.png" alt="">
+                        <div class="fire_water position-absolute ">
+                            <p class="fs_lg fw_bold m-0 clr_white mb-0">The Wonton </p>
+                            <p class="fw_regular fs_sm clr_white mb-0">we are all about we are all about to the fullest
+                                and
+                                all content
+                                dining
+                                out or in!dining out or
+                                in!</p>
+                            <div class="d-flex align-items-center "> <img class="mt-xl-2 mb-lg-0 "
+                                    src="./assets/images/png/locations.png" alt="">
+                                <p class="fs_sm fw_regular clr_white ms-2 mb-0">Saheb Bazar</p>
+                            </div>
+                            <div class="text-end mb-3"> <a
+                                    class="clr_pink bgc_white  py-xl-3 px-xl-5 py-lg-2 px-lg-4 rounded-start-pill py-sm-1 px-sm-2 px-2 py-1"
+                                    href="">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1 d-none d-sm-block"><a href=""><img class="scale_more"
+                            src="./assets/images/png/See More.png" alt=""></a></div>
+            </div>
+        </section>
+        <section
+            class="position-relative  min-vh-100 bgc_cream mt-md-5 d-flex justify-content-center align-items-center ">
+            <img class="position-absolute left_0 width_lg_277 z-3 d-none d-md-flex" src="./assets/images/png/diff.png"
+                alt="">
+            <div class="container ">
+
+                <div class=" d-flex justify-content-center align-items-center">
+
+
+                    <div class="bgc_white mx-auto mt-5 w_1000 h_560  position-relative"> <img
+                            class="position-absolute dots d-none d-md-flex" src="./assets/images/png/Group 35101.png"
+                            alt=""> <img class="position-absolute down_dot d-none d-lg-flex"
+                            src="./assets/images/png/down_dot.png" alt="">
+                        <div class="w_230 h_15 bgc_pink mt-5 mx-auto"></div>
+                        <p class="fs_2xl fw_medium clr_blue text-center mt-4">advance booking</p>
+                        <div class="d-flex justify-content-center mt-5"><input
+                                class="border-0 bgc_white clr_blue w_300 text-center" type="text"
+                                placeholder="search restaurant">
+                            <a class="bgc_pink py-2 px-3 clr_white" href="">GO</a>
+                        </div>
+
+                        <div class="d-flex justify-content-sm-center mt-5 flex-column flex-sm-row">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p class="fs_md fw_regular clr_blue text-center mb-0">Date</p>
+                                    <a class="" href=""><img class="mb-2 ms-2" src="./assets/images/png/triangle.png"
+                                            alt=""></a>
+                                </div>
+                                <input class="text-center" type="Date" id="start" name="trip-start" value="2018-07-22"
+                                    min="2018-01-01" max="2018-12-31" class="border-0 d-inline-block ms-5">
+                            </div>
+                            <div class="d-flex flex-column mx-5">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p class="fs_md fw_regular clr_blue text-center mb-0 mt-sm-0 mt-3">Time</p>
+                                    <a class="" href=""><img class="mb-2 ms-2" src="./assets/images/png/triangle.png"
+                                            alt=""></a>
+                                </div>
+                                <input class="text-center" type="time" id="appt" name="appt" min="09:00" max="18:00"
+                                    class="border-0 ms-5 ">
+                            </div>
+                            <div class="d-flex flex-column mb-5">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <p class="fs_md fw_regular clr_blue text-center mb-0 mt-3 mt-sm-0">Guests</p>
+                                    <a class="" href=""><img class="mb-2 ms-2" src="./assets/images/png/triangle.png"
+                                            alt=""></a>
+                                </div>
+
+
+                                <select class="text-center" name="" id="" class="border-0 outline_none ms-3">
+                                    <option value="volvo">1 Person</option>
+                                    <option value="saab">2 Person</option>
+                                    <option value="fiat">3 Person</option>
+                                    <option value="audi">4 Person</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="position-absolute right_0 bottom_20 scale_pata d-none d-md-flex"
+                src="./assets/images/png/pata.png" alt="">
+        </section>
+        <section class="">
+            <div class="container my_container">
+                <div class="row justify-content-between align-items-center mt-5">
+                    <div class="col-lg-4 col-xl-4 col-xxl-5">
+                        <div class="d-flex align-items-center">
+                            <div class="w_25 h_140 bgc_pink"></div>
+                            <p class="fs_3xl fw_medium text-center clr_blue ms-5">Our Services
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" col-lg-7 col-xl-7 col-xxl-5">
+                        <p class="fs_sm fw_regular clr_grey ms-sm-5 ms-xl-0 ms-5">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Est,
+                            adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique
+                            leo
+                            bibendum in a, tincidunt. Volutpat metus id amet, nam hac magna accumsan. Nascetur ac tortor
+                            purus
+                            ultrices morbi tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+                            adipiscing
+                            cursus auctor eget sed.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="bgc" id="MenuOne">
+            <div class="container my_container ">
+                <div class="row  justify-content-sm-between  mt-5 position-relative ">
+                    <div class="col-md-8 col-sm-12 col-12">
+                        <div class="row align-items-center justify-content-sm-between justify-content-center">
+                            <div class="col-6 col-sm-6 bgc_cream py-5 text-center">
+                                <div class=" "><img class="w-100" src="./assets/images/png/person sitting_emoji.png"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-7 mt-4 mt-sm-0">
+                                <p class="fw_medium fs_lg clr_blue mb-0">Advanced Table
+                                </p>
+                                <p class="fw_medium fs_lg clr_blue position-relative">
+                                    Booking</p>
+                                <p class="fs_sm fw_regular clr_grey">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. </p> <img
+                                    class="position-absolute scale_arrow top_15 right_15 d-none d-lg-flex"
+                                    src="./assets/images/png/Arrow 1.png" alt="">
+                                <img class="position-absolute scale_arrow_dif d-none d-lg-flex"
+                                    src="./assets/images/png/aroow_dif.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-sm-evenly justify-content-center align-items-center relative ">
+                            <div class="col-sm-6 col-7 mt-4 mt-sm-0">
+                                <div class="">
+                                    <p class="fs_lg fw_medium clr_blue m-0">Food For Free </p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="bgc_pink w_84 h_2 mb-3 d-none d-lg-flex"></div>
+                                        <p class="fs_lg fw_medium clr_blue position-relative">24/7</p>
+                                        <img class="position-absolute aroow_2 d-none d-lg-flex"
+                                            src="./assets/images/png/Arrow 2.png" alt="">
+                                    </div>
+                                    <p class="fs_sm fw_regular clr_grey">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing
+                                        elit. </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6 text-center  ">
+                                <div class=" bgc_cream pb-5"> <img class="mt-5 w-100"
+                                        src="./assets/images/png/spoon.png" alt="">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 bgc_cream text-center py-5 col-sm-7 col-6 mx-auto mt-4  mt-md-0"><img
+                            class="w-100" src="./assets/images/png/scooter_img.png" alt="">
+                        <p class="fs_lg fw_medium clr_blue mt-5 ">free home delivery
+                            at your door steps</p>
+                        <p class="fs_sm fw_regular clr_grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            </div>
+        </section>
+        <section class="" id="MenuTwo">
+            <div class="container my_container">
+                <p class="fw_medium fs_3xl clr_blue text-center mt-5">Explore Our Foods</p>
+                <div class="text-center">
+                    <p class="fs_sm fw_regular clr_grey w_731 mx-auto">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit.
+                        Est, adipiscing cursus auctor eget sed phasellus
+                        senectus. Ut tellus donec vestibulum tristique leo bibendum in a, tincidunt. Volutpat metus id
+                        amet.
+                    </p>
+                </div>
+                <div class="row mt-5 justify-content-sm-center justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-6  col-10">
+                        <div><img class="w-100" src="./assets/images/png/sandwich1.png" alt="">
+                            <div class="bgc_white px-3 pb-2 br_25">
+                                <div class="d-flex justify-content-between ">
+                                    <p class="fs_lg fw_medium clr_blue ">Hand Sandwich</p>
+                                    <p class="fs_lg fw_bold clr_pink">$10.25</p>
+                                </div>
+
+                                <p class="fs_sm fw_regular clr_grey ">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Est, adipiscing. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-10  mt-5 mt-sm-0">
+                        <div><img class="w-100" src="./assets/images/png/burger2.png" alt="">
+                            <div class="bgc_white px-3 pb-2 br_25">
+                                <div class="d-flex justify-content-between ">
+                                    <p class="fs_lg fw_medium clr_blue ">Hand Sandwich</p>
+                                    <p class="fs_lg fw_bold clr_pink">$10.25</p>
+                                </div>
+
+                                <p class="fs_sm fw_regular clr_grey ">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Est, adipiscing. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-md-5 mt-lg-0 col-sm-6 mt-sm-5 col-10 mt-5 mt-sm-0">
+                        <div><img class="w-100" src="./assets/images/png/finger3.png" alt="">
+                            <div class="bgc_white px-3 pb-2 br_25">
+                                <div class="d-flex justify-content-between ">
+                                    <p class="fs_lg fw_medium clr_blue ">Hand Sandwich</p>
+                                    <p class="fs_lg fw_bold clr_pink">$10.25</p>
+                                </div>
+
+                                <p class="fs_sm fw_regular clr_grey ">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Est, adipiscing. </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-md-5 mt-lg-0 col-sm-6 mt-sm-5 col-10 mt-5 mt-sm-0">
+                        <div><img class="w-100" src="./assets/images/png/snack4.png" alt="">
+                            <div class="bgc_white px-3 pb-2 br_25">
+                                <div class="d-flex justify-content-between ">
+                                    <p class="fs_lg fw_medium clr_blue ">Hand Sandwich</p>
+                                    <p class="fs_lg fw_bold clr_pink">$10.25</p>
+                                </div>
+
+                                <p class="fs_sm fw_regular clr_grey ">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Est, adipiscing. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-md-5 mt-lg-0 col-sm-6 mt-sm-5 col-10 mt-5 mt-sm-0">
+                        <div><img class="w-100" src="./assets/images/png/cake5.png" alt="">
+                            <div class="bgc_white px-3 pb-2 br_25">
+                                <div class="d-flex justify-content-between ">
+                                    <p class="fs_lg fw_medium clr_blue ">Hand Sandwich</p>
+                                    <p class="fs_lg fw_bold clr_pink">$10.25</p>
+                                </div>
+
+                                <p class="fs_sm fw_regular clr_grey ">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Est, adipiscing. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-lg-5 mt-md-5 mt-lg-0 col-sm-6 mt-sm-5 col-10 mt-5 mt-sm-0">
+                        <div><img class="w-100" src="./assets/images/png/cookies6.png" alt="">
+                            <div class="bgc_white px-3 pb-2 br_25">
+                                <div class="d-flex justify-content-between ">
+                                    <p class="fs_lg fw_medium clr_blue ">Hand Sandwich</p>
+                                    <p class="fs_lg fw_bold clr_pink">$10.25</p>
+                                </div>
+
+                                <p class="fs_sm fw_regular clr_grey ">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Est, adipiscing. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bgc_cream min-vh-100 mt-5 d-flex justify-content-center align-items-center " id="MenuThree">
+            <div class="container my_container ">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-xl-5 col-lg-6 text-center text-sm-start ">
+                        <div class="d-flex ">
+                            <div class="w_60 h_110 bgc_pink"></div>
+                            <div>
+                                <p class="fs_3xl fw_medium clr_blue ms-4">Download App For
+                                    Exciting Deals</p>
+
+                                <p class="ms-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing
+                                    cursus
+                                    auctor eget
+                                    sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a,
+                                    tincidunt.
+                                </p>
+                                <div class="ms-4 "> <a class="d-inline-block" href=""><img
+                                            src="./assets/images/png/Google Play Btn.png" alt=""></a>
+                                    <a class="mt-4 mt-sm-0 d-inline-block " href=""><img
+                                            src="./assets/images/png/Apple Store.png" alt=""></a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4 col-lg-4 text-center  ">
+
+                        <div class="position-relative"><img class="d-none d-sm-flex position-absolute scale_gobi "
+                                src="./assets/images/png/gobi2.png" alt=""><img class="position-relative z-1 phone"
+                                src="./assets/images/png/phone.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-5 position-relative " id="MenuFour">
+        <img class="position-absolute jhadi d-none d-lg-flex" src="./assets/images/png/jhadi.png" alt="">
+        <div class="container my_container">
+            <p class="fw_regular fs_2xl clr_blue text-center m-0">Get notified
+            </p>
+            <p class="fw_regular fs_2xl clr_blue text-center ">about new amazing products
+            </p>
+            <p class="clr_grey fw_regular fs_sm text-center w_lg_500 mx-auto">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Est, adipiscing cursus auctor eget sed phasellus
+                senectus. </p>
+            <div class="d-flex justify-content-center ">
+                <div class="d-flex bgc_white  justify-content-between px-sm-5 px-4  radius_100"><input
+                        class="border-0 w_146" type="text" placeholder="E-mail">
+                    <a href=""><img class="circle_red" src="./assets/images/png/red circle.png" alt=""></a></div>
+            </div>
+            <div>
+                <ul class="d-flex justify-content-center mt-sm-5 mt-5 flex-column flex-sm-row align-items-center">
+                    <li class="mt-4"><a class="clr_grey fw_regular fs_md d-inline-block" href="">Product</a></li>
+                    <li class="mt-4 mt-sm-0"><a class="clr_grey fw_regular fs_md ms-sm-5 ms-0 mt-4 d-inline-block "
+                            href="">Company</a></li>
+                    <li class="mt-4 mt-sm-0"><a class="clr_grey fw_regular fs_md ms-sm-5 ms-0 mt-4 d-inline-block "
+                            href="">Learn More</a></li>
+                    <li class="mt-4 mt-sm-0"><a class="clr_grey fw_regular fs_md ms-sm-5 ms-0 mt-4 d-inline-block "
+                            href="">Get in touch</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+    <!-- ---------jquery.min.js-------  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- -----------slick.min.js--------  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.responsive').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            nextArrow: $('.next'),
+            prevArrow: $('.pre'),
+         
+        });
+    </script>
+    <script src="./assets/app.js"></script>
+
+    </script>
+</body>
+
+</html>
